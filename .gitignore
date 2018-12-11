@@ -5,3 +5,7 @@ __pycache
 app/db.sqlite3
 app/staticfiles
 app/mediafiles
+
+# Node
+app/node_modules
+app/package-lock.json
