@@ -20,7 +20,10 @@ services:
       - SQL_PORT=5432
     depends_on:
       - db
-
+  frontend:
+    build:
+      context: ./app/assets
+      dockerfile: Dockerfile
   db:
     image: postgres:10.5-alpine
     volumes:
