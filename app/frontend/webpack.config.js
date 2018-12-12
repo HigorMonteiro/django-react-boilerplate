@@ -4,10 +4,10 @@ var BundleTracker = require('webpack-bundle-tracker');
 var ExtractText = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry:  path.join(__dirname, 'assets/src/js/index'),
+  entry:  path.join(__dirname, './assets/src/js/index'),
 
   output: {
-    path: path.join(__dirname, 'assets/dist'),
+    path: path.join(__dirname, '../staticfiles/dist'),
     filename: '[name]-[hash].js'
   },
 
