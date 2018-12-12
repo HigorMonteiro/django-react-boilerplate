@@ -24,6 +24,9 @@ services:
     build:
       context: ./app/assets
       dockerfile: Dockerfile
+    volumes:
+      - ./app/:/usr/src/app/
+      - /usr/src/app/:/usr/src/app/node_modules
   db:
     image: postgres:10.5-alpine
     volumes:
