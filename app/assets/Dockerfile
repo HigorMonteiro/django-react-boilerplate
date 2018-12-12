@@ -9,6 +9,6 @@ WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
 # install and cache app dependencies
-COPY . /usr/src/app/
+COPY . ./
 RUN npm install --production --silent
-RUN npm run start
+RUN npm start
