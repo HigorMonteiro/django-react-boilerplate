@@ -1,0 +1,10 @@
+- name: Add user ubuntu on server
+  remote_user: root
+  ansible_user: root
+  user:
+    name: ubuntu
+    password: "{{'password' | password_hash(sha512) }}"
+    create_home: yes
+    state: present
+    groups: sudo
+

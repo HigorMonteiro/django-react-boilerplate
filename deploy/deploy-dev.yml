@@ -1,0 +1,10 @@
+- hosts: dev
+  remote_user: root
+  roles:
+    - update_system
+    # - nodejs
+    # - pip3
+    # - docker
+    - deploy
+    - docker_service
+    # - create_user

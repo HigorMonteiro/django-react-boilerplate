@@ -1,0 +1,12 @@
+- name: Install Git
+  apt:
+    name: git
+    state: present   
+
+- name: deploy aplication
+  git:
+    repo: https://github.com/HigorMonteiro/django-react-boilerplate.git
+    dest: '{{app_dir}}'
+    force: yes
+    accept_hostkey: yes
+    version: 'master'

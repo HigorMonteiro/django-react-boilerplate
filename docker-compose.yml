@@ -38,7 +38,7 @@ services:
       - media_volume:/usr/src/app/mediafiles
       # - ./error.log:/var/log/nginx/error.log
     ports:
-      - 1337:80
+      - 8080:80
     depends_on:
       - web
 
